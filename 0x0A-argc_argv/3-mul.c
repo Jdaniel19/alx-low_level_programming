@@ -9,4 +9,16 @@
  */
 int main(int argc, char *argv[])
 {
+	int night, spike;
+
+	if (argc == 3)
+	{
+		night = atoi(argv[1]);
+		spike = atoi(argv[2]);
+		printf("%d\n", night * spike);
+		return (0);
+	}
+	printf("Error\n");
+	return (1);
+}
 
